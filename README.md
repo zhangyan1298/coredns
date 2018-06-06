@@ -36,7 +36,7 @@ For non-RBAC deployments, you'll need to edit the resulting yaml before applying
 1. Remove the line `serviceAccountName: coredns` from the `Deployment` section.
 2. Remove the `ServiceAccount`, `ClusterRole`, and `ClusterRoleBinding` sections.
 
-###############
+
 ---模板文件修改了--
 ***原模板默认在群集里存在kube-dns，用于平滑升级---
 ***修改后的模板去除了平滑升级项，及替换了imge ***
@@ -48,5 +48,5 @@ For non-RBAC deployments, you'll need to edit the resulting yaml before applying
 那么部署时候可以使用
 deploy.sh -r 10.0.0.0/16 指定cluster_pod_cidr IP
 ####
-同时修改了
+
 
