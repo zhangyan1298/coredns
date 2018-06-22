@@ -49,4 +49,7 @@ For non-RBAC deployments, you'll need to edit the resulting yaml before applying
 deploy.sh -r 10.0.0.0/16 指定cluster_pod_cidr IP 生成coredns相关配置文件
 ####
 
+###
+k8s使用的证书如果不包括svcip，那么需要加上kubernetes_svc_host变量
+
 
