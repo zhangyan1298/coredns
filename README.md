@@ -45,6 +45,7 @@ For non-RBAC deployments, you'll need to edit the resulting yaml before applying
 同时默认cluster_dns_ip 从kube-dns-svc获取，需要修改自定义dns地址和cluster_pod_cidr 地址。
 例如。
 脚本文件新增CLUSTER_DNS_IP=10.1.0.2
+cluster_dns_ip  是svc 接口地址，需要匹配kubelet 内--cluster-dns 选项
 那么部署时候可以使用
 deploy.sh -r 10.0.0.0/16 指定cluster_pod_cidr IP 生成coredns相关配置文件
 ####
