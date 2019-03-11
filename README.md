@@ -52,5 +52,9 @@ deploy.sh -r 10.0.0.0/16 指定cluster_pod_cidr IP 生成coredns相关配置文�
 
 ###
 k8s使用的证书如果不包括svcip，那么需要加上kubernetes_svc_host变量
-
+###
+1.更改labels 
+kube-dns-->core-dns
+2.部署
+deploy.sh -r 指定cidr-cluster，脚本模板已经设定了默认dnsip
 
